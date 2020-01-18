@@ -1,0 +1,12 @@
+[submodule "source/libs/freertos"]
+	path = source/libs/freertos
+	url = https://github.com/dimtass/freertos.git
+[submodule "source/libs/noarch_c_lib"]
+	path = source/libs/noarch_c_lib
+	url = https://bitbucket.org/dimtass/noarch_c_lib.git
+[submodule "source/libs/stm32-usb-fs-device-driver"]
+	path = source/libs/stm32-usb-fs-device-driver
+	url = https://github.com/dimtass/stm32-usb-fs-device-driver.git
+[submodule "source/libs/stm32f3_dimtass_lib"]
+	path = source/libs/stm32f3_dimtass_lib
+	url = https://dimtass@bitbucket.org/dimtass/stm32f3_dimtass_lib.git
