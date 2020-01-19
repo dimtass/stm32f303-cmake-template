@@ -16,7 +16,7 @@ set(STM32_DIMTASS_LIB_SRC
     # ${STM32_DIMTASS_LIB_DIR}/src/dev_pwm.c
     # ${STM32_DIMTASS_LIB_DIR}/src/dev_spi_master.c
     # ${STM32_DIMTASS_LIB_DIR}/src/dev_spi_slave.c
-    # ${STM32_DIMTASS_LIB_DIR}/src/dev_uart.c
+    ${STM32_DIMTASS_LIB_DIR}/src/dev_uart.c
     ${STM32_DIMTASS_LIB_DIR}/src/overclock_stm32f303.c
     ${STM32_DIMTASS_LIB_DIR}/src/tiny_printf.c
     ${STM32_DIMTASS_LIB_DIR}/src/stlinky.c
