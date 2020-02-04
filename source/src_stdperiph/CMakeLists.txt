@@ -5,6 +5,7 @@ include_directories(inc)
 file(GLOB C_SOURCE
     # Add the external source files from my lib
     ${STM32_DIMTASS_LIB_SRC}
+    ${NOARCH_LIB_SRC}
     # Add the local and project specific files
     main.c
     system_stm32f30x.c
