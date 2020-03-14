@@ -8,3 +8,9 @@ endif()
 include_directories(
     ${NOARCH_LIB_DIR}/
 )
+
+set(NOARCH_LIB_SRC
+    # ${NOARCH_LIB_DIR}/btn_lib.c
+    ${NOARCH_LIB_DIR}/rotary_cont_pot.c
+    ${NOARCH_LIB_DIR}/rotary_enc_pot.c
+)
