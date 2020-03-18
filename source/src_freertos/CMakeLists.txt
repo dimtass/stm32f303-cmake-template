@@ -7,8 +7,7 @@ file(GLOB C_SOURCE
     ${STM32_DIMTASS_LIB_SRC}
     # Add the local and project specific files
     main.c
-    stm32f30x_it.c
-    system_stm32f30x.c
+    stm32f4xx_it.c
 )
 
 set_source_files_properties(${C_SOURCE}

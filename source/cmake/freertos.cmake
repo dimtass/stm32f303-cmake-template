@@ -7,7 +7,7 @@ endif()
 
 set(FREERTOS_INC_DIR
     ${FREERTOS_DIR}/include
-    ${FREERTOS_DIR}/portable/GCC/ARM_CM4_MPU
+    ${FREERTOS_DIR}/portable/GCC/ARM_CM4F
 )
 
 include_directories(
@@ -16,8 +16,7 @@ include_directories(
 )
 
 set(FREERTOS_LIB_SRC
-    ${FREERTOS_DIR}/portable/GCC/ARM_CM4_MPU/port.c
-    ${FREERTOS_DIR}/portable/Common/mpu_wrappers.c
+    ${FREERTOS_DIR}/portable/GCC/ARM_CM4F/port.c
     ${FREERTOS_DIR}/portable/MemMang/heap_1.c
     ${FREERTOS_DIR}/portable/MemMang/heap_2.c
     ${FREERTOS_DIR}/portable/MemMang/heap_3.c
