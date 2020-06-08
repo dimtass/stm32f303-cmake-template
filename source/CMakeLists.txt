@@ -12,6 +12,7 @@ option(USE_STTERM "Use st-term" OFF)
 option(USE_DBGUART "Use debug UART" OFF)
 option(USE_GDB "Enable GDB build for debugging" OFF)
 option(USE_OVERCLOCKING "Enable overclocking to 128MHz" OFF)
+option(USE_TINY_PRINTF "Use tiny printf to minimize firmware size" OFF)
 
 # Set STM32 SoC specific variables
 set(STM32_DEFINES " \

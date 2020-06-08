@@ -22,6 +22,8 @@ echo "Building the project in Linux environment"
 : ${USE_STTERM:="OFF"}
 # Enable debug UART
 : ${USE_DBGUART:="OFF"}
+# Enable tiny printf
+: ${USE_TINY_PRINTF:=OFF}
 # Enable GDB build
 : ${USE_GDB:="OFF"}
 # Enable overclock?
@@ -61,6 +63,7 @@ if [ "${ARCHITECTURE}" == "stm32" ]; then
                 -DUSE_SEMIHOSTING=${USE_SEMIHOSTING} \
                 -DUSE_STTERM=${USE_STTERM} \
                 -DUSE_DBGUART=${USE_DBGUART} \
+                -DUSE_TINY_PRINTF=${USE_TINY_PRINTF} \
                 -DUSE_GDB=${USE_GDB} \
                 -DUSE_OVERCLOCKING=${USE_OVERCLOCKING} \
                 -DSRC=${SRC} \
