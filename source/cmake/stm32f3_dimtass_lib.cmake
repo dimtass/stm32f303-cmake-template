@@ -18,10 +18,14 @@ set(STM32_DIMTASS_LIB_SRC
     # ${STM32_DIMTASS_LIB_DIR}/src/dev_spi_slave.c
     ${STM32_DIMTASS_LIB_DIR}/src/dev_uart.c
     ${STM32_DIMTASS_LIB_DIR}/src/overclock_stm32f303.c
-    ${STM32_DIMTASS_LIB_DIR}/src/tiny_printf.c
     ${STM32_DIMTASS_LIB_DIR}/src/stlinky.c
     ${STM32_DIMTASS_LIB_DIR}/src/syscalls.c
 )
+
+if (USE_TINY_PRINTF)
+  set(STM32_DIMTASS_LIB_SRC ${STM32_DIMTASS_LIB_SRC} ${STM32_DIMTASS_LIB_DIR}/src/tiny_printf.c)
+endif()
+
 
 if (USE_DBGUART)
   set(STM32_DIMTASS_LIB_SRC ${STM32_DIMTASS_LIB_SRC} ${STM32_DIMTASS_LIB_DIR}/src/syscalls.c)
