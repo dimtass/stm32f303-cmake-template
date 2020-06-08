@@ -1,7 +1,9 @@
 STM32F303 cmake template
 ----
 
-This is a template cmake project for the stm32f103. So what's
+[![dimtass](https://circleci.com/gh/dimtass/stm32f303-cmake-template.svg?style=svg)](https://circleci.com/gh/dimtass/stm32f303-cmake-template)
+
+This is a template cmake project for the stm32f303. So what's
 so special about it? Well, it supports the following things:
 
 * STM32 Standard Peripheral Library
@@ -42,7 +44,7 @@ Because this repo has dependencies on other submodules, in order to
 fetch the repo use the following command:
 
 ```sh
-git clone --recursive -j8 https://dimtass@bitbucket.org/dimtass/stm32f103-cmake-template.git
+git clone --recursive -j8 https://dimtass@bitbucket.org/dimtass/stm32f303-cmake-template.git
 ```
 
 ## Examples
